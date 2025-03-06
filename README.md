@@ -92,3 +92,37 @@ JWT_SECRET=your_secret_key
 - **package.json**: Lists project dependencies and scripts
 - **.env**: Stores environment variables (not committed to version control)
 ```
+
+# backend folder
+-server.js is for entry point of an api
+
+for setup port :-
+
+//setup port 
+
+    app.listen(5000,()=>
+    console.log('server is running on port 5000'));
+
+    after this go to package.json 
+
+    write :
+    "dev": "location of this file/ node but after installing nodemon , its looklike  "nodemon backend/server.js":
+    after this : use npm run dev 
+     for the out put 
+
+
+     for its not confinent for use :
+     for this install a package : npm i nodemon -D
+        make it a dev dependency :
+         here in package.json file :-
+         look like this - 
+          "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+
+
+  then changes you have to done :
+
+
+
+//when i change anything it will restart agin and agin 
