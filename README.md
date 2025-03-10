@@ -126,3 +126,13 @@ for setup port :-
 
 
 //when i change anything it will restart agin and agin 
+
+# day 2
+
+today we are woking on setup local host 
+
+app.get("/",(req,res) =>{
+    res.send("Server is ready");
+})
+#  //req = request, res = response "/" for home page . when localhost:5000 is called this will be executed and app.get is used to get the response from the server  , //res.send is used to send response to the client 
+
